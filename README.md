@@ -1,1 +1,3 @@
-# e-commerce-frontend-i01-product-page-container-29442-29665-pre_prod
+# Project Repository
+
+This is the initial README file for the project.
