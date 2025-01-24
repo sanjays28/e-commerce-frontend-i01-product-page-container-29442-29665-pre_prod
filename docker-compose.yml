@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  product-page:
+    build:
+      context: ./product-page-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      - NODE_ENV=production
+      # Add any other environment variables needed for the application
+      # - REACT_APP_API_URL=http://api-backend:8080
+
+  # Uncomment if you need a development service
+  # product-page-dev:
+  #   build:
+  #     context: ./product-page-app
+  #     target: development
+  #   ports:
+  #     - "3001:3000"
+  #   volumes:
+  #     - ./product-page-app:/app
+  #     - /app/node_modules
+  #   environment:
+  #     - NODE_ENV=development
+  #   command: npm start
